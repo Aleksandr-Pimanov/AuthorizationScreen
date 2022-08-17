@@ -18,14 +18,7 @@ class ViewController: UIViewController {
     }()
     
     let mainTopLabel = MainTopLabel()
-    
-//    private let mainTopLabel: UILabel = {
-//        let topLabel = UILabel()
-//        topLabel.text = "Login"
-//        topLabel.textColor = .white
-//        topLabel.translatesAutoresizingMaskIntoConstraints = false
-//        return topLabel
-//    }()
+    let loginTextField = LoginTextField()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +37,9 @@ class ViewController: UIViewController {
             mainTopLabel.topAnchor.constraint(equalTo: backgroundImageView.safeAreaLayoutGuide.topAnchor, constant: 60),
             mainTopLabel.leadingAnchor.constraint(equalTo: backgroundImageView.leadingAnchor, constant: 160),
             mainTopLabel.trailingAnchor.constraint(equalTo: backgroundImageView.trailingAnchor, constant: -120)
+        ])
+        NSLayoutConstraint.activate([
+            
         ])
     }
     

@@ -15,6 +15,10 @@
 		B619ECF728ACE87900203B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B619ECF528ACE87900203B5C /* LaunchScreen.storyboard */; };
 		B619ECFF28ACEAA100203B5C /* screen back.png in Resources */ = {isa = PBXBuildFile; fileRef = B619ECFE28ACEAA100203B5C /* screen back.png */; };
 		B619ED0128ACF2AB00203B5C /* MainTopLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619ED0028ACF2AB00203B5C /* MainTopLabel.swift */; };
+		B619ED0528ACF8F000203B5C /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619ED0428ACF8F000203B5C /* LoginTextField.swift */; };
+		B619ED0728ACFFAB00203B5C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */; };
+		B619ED0A28AD057200203B5C /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = B619ED0828AD057100203B5C /* password.png */; };
+		B619ED0B28AD057200203B5C /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = B619ED0928AD057100203B5C /* login.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		B619ECF828ACE87900203B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B619ECFE28ACEAA100203B5C /* screen back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen back.png"; sourceTree = "<group>"; };
 		B619ED0028ACF2AB00203B5C /* MainTopLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopLabel.swift; sourceTree = "<group>"; };
+		B619ED0428ACF8F000203B5C /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		B619ED0828AD057100203B5C /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		B619ED0928AD057100203B5C /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +72,12 @@
 				B619ECEC28ACE87400203B5C /* SceneDelegate.swift */,
 				B619ECEE28ACE87400203B5C /* ViewController.swift */,
 				B619ED0028ACF2AB00203B5C /* MainTopLabel.swift */,
+				B619ED0428ACF8F000203B5C /* LoginTextField.swift */,
+				B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */,
 				B619ECF028ACE87400203B5C /* Main.storyboard */,
 				B619ECF328ACE87900203B5C /* Assets.xcassets */,
+				B619ED0928AD057100203B5C /* login.png */,
+				B619ED0828AD057100203B5C /* password.png */,
 				B619ECFE28ACEAA100203B5C /* screen back.png */,
 				B619ECF528ACE87900203B5C /* LaunchScreen.storyboard */,
 				B619ECF828ACE87900203B5C /* Info.plist */,
@@ -132,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B619ECF728ACE87900203B5C /* LaunchScreen.storyboard in Resources */,
+				B619ED0B28AD057200203B5C /* login.png in Resources */,
 				B619ECF428ACE87900203B5C /* Assets.xcassets in Resources */,
+				B619ED0A28AD057200203B5C /* password.png in Resources */,
 				B619ECF228ACE87400203B5C /* Main.storyboard in Resources */,
 				B619ECFF28ACEAA100203B5C /* screen back.png in Resources */,
 			);
@@ -147,8 +161,10 @@
 			files = (
 				B619ECEF28ACE87400203B5C /* ViewController.swift in Sources */,
 				B619ED0128ACF2AB00203B5C /* MainTopLabel.swift in Sources */,
+				B619ED0728ACFFAB00203B5C /* PasswordTextField.swift in Sources */,
 				B619ECEB28ACE87400203B5C /* AppDelegate.swift in Sources */,
 				B619ECED28ACE87400203B5C /* SceneDelegate.swift in Sources */,
+				B619ED0528ACF8F000203B5C /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

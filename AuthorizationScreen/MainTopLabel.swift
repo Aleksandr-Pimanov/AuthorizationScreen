@@ -21,7 +21,7 @@ class MainTopLabel: UILabel {
     
     private func setConfiguration() {
         text = "Login"
-        textColor = #colorLiteral(red: 0.9450980392, green: 0.9333333333, blue: 0.862745098, alpha: 1)
+        textColor = .white
         font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 27)
         adjustsFontSizeToFitWidth = true
         translatesAutoresizingMaskIntoConstraints = false
