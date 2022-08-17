@@ -22,12 +22,18 @@ class ViewController: UIViewController {
     let passwordTextField = PasswordTextField()
     let loginButton = LoginButton()
     let forgotPasswordLabel = ForgotPasswordLabel()
+    let connectionLabel = ConnectionLabel()
+    let facebookButton = FacebookButton()
+    let twitterButton = TwitterButton()
+    
     private lazy var stackViewLoginAndPassword = UIStackView(arrangedSubviews: [loginTextField,
                                                                                 passwordTextField],
-                                                             axis: .vertical, spacing: 20)
+                                                             axis: .vertical, spacing: 20, distribution: .fillEqually)
     private lazy var stackViewLoginButtonAndLabel = UIStackView(arrangedSubviews: [loginButton,
                                                                                   forgotPasswordLabel],
-                                                                axis: .vertical, spacing: 20)
+                                                                axis: .vertical, spacing: 20, distribution: .fillEqually)
+    private lazy var stackViewNetwoksButtons = UIStackView(arrangedSubviews: [facebookButton,
+                                                                              twitterButton], axis: .horizontal, spacing: 20, distribution: .fillEqually)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +46,8 @@ class ViewController: UIViewController {
         view.addSubview(mainTopLabel)
         view.addSubview(stackViewLoginAndPassword)
         view.addSubview(stackViewLoginButtonAndLabel)
+        view.addSubview(connectionLabel)
+        view.addSubview(stackViewNetwoksButtons)
     }
     
     private func setConstraints() {
@@ -63,6 +71,17 @@ class ViewController: UIViewController {
             stackViewLoginButtonAndLabel.topAnchor.constraint(equalTo: stackViewLoginAndPassword.bottomAnchor, constant: 100),
             stackViewLoginButtonAndLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
             stackViewLoginButtonAndLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50)
+        ])
+        NSLayoutConstraint.activate([
+            connectionLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -180),
+            connectionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150),
+            connectionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -150)
+        ])
+        NSLayoutConstraint.activate([
+            stackViewNetwoksButtons.topAnchor.constraint(equalTo: connectionLabel.bottomAnchor, constant: 50),
+            stackViewNetwoksButtons.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            stackViewNetwoksButtons.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            stackViewNetwoksButtons.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -60)
         ])
     }
 }

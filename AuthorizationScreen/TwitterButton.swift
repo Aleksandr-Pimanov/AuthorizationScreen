@@ -1,14 +1,14 @@
 //
-//  LoginButton.swift
+//  TwitterButton.swift
 //  AuthorizationScreen
 //
-//  Created by Aleksandr Pimanov on 17.08.2022.
+//  Created by Aleksandr Pimanov on 18.08.2022.
 //
 
 import Foundation
 import UIKit
 
-class LoginButton: UIButton {
+class TwitterButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,17 +20,19 @@ class LoginButton: UIButton {
     }
     
     private func setConfiguration() {
-        setTitle("Login", for: .normal)
-        titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 20)
+        setTitle("Twitter", for: .normal)
+        titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 15)
         setTitleColor(UIColor.white, for: .normal)
-        backgroundColor = .systemTeal
+        backgroundColor = .systemPurple
         layer.cornerRadius = 20
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.5
         layer.shadowOffset = .zero
         layer.shadowRadius = 15
         layer.shouldRasterize = true
+        imageView?.image = UIImage(named: "twitter")
         layer.rasterizationScale = UIScreen.main.scale
         translatesAutoresizingMaskIntoConstraints = false
     }
 }
+
