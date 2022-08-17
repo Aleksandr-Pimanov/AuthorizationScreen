@@ -19,6 +19,9 @@
 		B619ED0728ACFFAB00203B5C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */; };
 		B619ED0A28AD057200203B5C /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = B619ED0828AD057100203B5C /* password.png */; };
 		B619ED0B28AD057200203B5C /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = B619ED0928AD057100203B5C /* login.png */; };
+		B619ED0F28AD09B900203B5C /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619ED0E28AD09B900203B5C /* StackView.swift */; };
+		B64C34DD28AD7DC300DA7B72 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C34DC28AD7DC300DA7B72 /* LoginButton.swift */; };
+		B64C34DF28AD818100DA7B72 /* ForgotPasswordLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C34DE28AD818100DA7B72 /* ForgotPasswordLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		B619ED0828AD057100203B5C /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
 		B619ED0928AD057100203B5C /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		B619ED0E28AD09B900203B5C /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		B64C34DC28AD7DC300DA7B72 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		B64C34DE28AD818100DA7B72 /* ForgotPasswordLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 				B619ED0028ACF2AB00203B5C /* MainTopLabel.swift */,
 				B619ED0428ACF8F000203B5C /* LoginTextField.swift */,
 				B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */,
+				B619ED0E28AD09B900203B5C /* StackView.swift */,
+				B64C34DC28AD7DC300DA7B72 /* LoginButton.swift */,
+				B64C34DE28AD818100DA7B72 /* ForgotPasswordLabel.swift */,
 				B619ECF028ACE87400203B5C /* Main.storyboard */,
 				B619ECF328ACE87900203B5C /* Assets.xcassets */,
 				B619ED0928AD057100203B5C /* login.png */,
@@ -160,9 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B619ECEF28ACE87400203B5C /* ViewController.swift in Sources */,
+				B64C34DD28AD7DC300DA7B72 /* LoginButton.swift in Sources */,
 				B619ED0128ACF2AB00203B5C /* MainTopLabel.swift in Sources */,
 				B619ED0728ACFFAB00203B5C /* PasswordTextField.swift in Sources */,
+				B619ED0F28AD09B900203B5C /* StackView.swift in Sources */,
 				B619ECEB28ACE87400203B5C /* AppDelegate.swift in Sources */,
+				B64C34DF28AD818100DA7B72 /* ForgotPasswordLabel.swift in Sources */,
 				B619ECED28ACE87400203B5C /* SceneDelegate.swift in Sources */,
 				B619ED0528ACF8F000203B5C /* LoginTextField.swift in Sources */,
 			);
