@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
+
+//MARK: - SetUpProperties
     
     let mainTopLabel = MainTopLabel()
     let loginTextField = LoginTextField()
@@ -25,6 +27,7 @@ class ViewController: UIViewController {
     let connectionLabel = ConnectionLabel()
     let facebookButton = FacebookButton()
     let twitterButton = TwitterButton()
+    let sigUpLabel = SignUpLabel()
     
     private lazy var stackViewLoginAndPassword = UIStackView(arrangedSubviews: [loginTextField,
                                                                                 passwordTextField],
@@ -34,11 +37,14 @@ class ViewController: UIViewController {
                                                                 axis: .vertical, spacing: 20, distribution: .fillEqually)
     private lazy var stackViewNetwoksButtons = UIStackView(arrangedSubviews: [facebookButton,
                                                                               twitterButton], axis: .horizontal, spacing: 20, distribution: .fillEqually)
-
+    
+//MARK: - SetUpViews
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         setConstraints()
+        setIconsToTF()
     }
     
     private func setupViews() {
@@ -48,7 +54,15 @@ class ViewController: UIViewController {
         view.addSubview(stackViewLoginButtonAndLabel)
         view.addSubview(connectionLabel)
         view.addSubview(stackViewNetwoksButtons)
+        view.addSubview(sigUpLabel)
     }
+    
+    private func setIconsToTF() {
+        loginTextField.setLeftIconForLogin()
+        passwordTextField.setLeftIconForPassword()
+    }
+ 
+//MARK: - SetUpConstraints
     
     private func setConstraints() {
         NSLayoutConstraint.activate([
@@ -58,9 +72,9 @@ class ViewController: UIViewController {
             backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
         ])
         NSLayoutConstraint.activate([
-            mainTopLabel.topAnchor.constraint(equalTo: backgroundImageView.safeAreaLayoutGuide.topAnchor, constant: 60),
-            mainTopLabel.leadingAnchor.constraint(equalTo: backgroundImageView.leadingAnchor, constant: 160),
-            mainTopLabel.trailingAnchor.constraint(equalTo: backgroundImageView.trailingAnchor, constant: -120)
+            mainTopLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60),
+            mainTopLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 160),
+            mainTopLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -160)
         ])
         NSLayoutConstraint.activate([
             stackViewLoginAndPassword.topAnchor.constraint(equalTo: mainTopLabel.bottomAnchor, constant: 50),
@@ -83,6 +97,11 @@ class ViewController: UIViewController {
             stackViewNetwoksButtons.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             stackViewNetwoksButtons.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -60)
         ])
+        NSLayoutConstraint.activate([
+            sigUpLabel.topAnchor.constraint(equalTo: stackViewNetwoksButtons.bottomAnchor, constant: 20),
+            sigUpLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 20),
+            sigUpLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 150),
+            sigUpLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -150)
+        ])
     }
 }
-

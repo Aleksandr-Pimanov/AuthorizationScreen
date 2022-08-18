@@ -19,7 +19,7 @@
 		B619ED0728ACFFAB00203B5C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */; };
 		B619ED0A28AD057200203B5C /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = B619ED0828AD057100203B5C /* password.png */; };
 		B619ED0B28AD057200203B5C /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = B619ED0928AD057100203B5C /* login.png */; };
-		B619ED0F28AD09B900203B5C /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619ED0E28AD09B900203B5C /* StackView.swift */; };
+		B619ED0F28AD09B900203B5C /* StackView and Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619ED0E28AD09B900203B5C /* StackView and Extensions.swift */; };
 		B64C34DD28AD7DC300DA7B72 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C34DC28AD7DC300DA7B72 /* LoginButton.swift */; };
 		B64C34DF28AD818100DA7B72 /* ForgotPasswordLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C34DE28AD818100DA7B72 /* ForgotPasswordLabel.swift */; };
 		B64C34E328AD927900DA7B72 /* ConnectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C34E228AD927900DA7B72 /* ConnectionLabel.swift */; };
@@ -27,6 +27,7 @@
 		B64C34E728AD99B000DA7B72 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = B64C34E628AD99B000DA7B72 /* facebook.png */; };
 		B64C34E928AD9A0D00DA7B72 /* TwitterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C34E828AD9A0D00DA7B72 /* TwitterButton.swift */; };
 		B64C34EB28AD9AB500DA7B72 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = B64C34EA28AD9AB500DA7B72 /* twitter.png */; };
+		B66480E028AE27F30002E5DC /* SignUpLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66480DF28AE27F30002E5DC /* SignUpLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +45,7 @@
 		B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		B619ED0828AD057100203B5C /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
 		B619ED0928AD057100203B5C /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
-		B619ED0E28AD09B900203B5C /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		B619ED0E28AD09B900203B5C /* StackView and Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView and Extensions.swift"; sourceTree = "<group>"; };
 		B64C34DC28AD7DC300DA7B72 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		B64C34DE28AD818100DA7B72 /* ForgotPasswordLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordLabel.swift; sourceTree = "<group>"; };
 		B64C34E228AD927900DA7B72 /* ConnectionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionLabel.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		B64C34E628AD99B000DA7B72 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		B64C34E828AD9A0D00DA7B72 /* TwitterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterButton.swift; sourceTree = "<group>"; };
 		B64C34EA28AD9AB500DA7B72 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		B66480DF28AE27F30002E5DC /* SignUpLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,29 +86,86 @@
 		B619ECE928ACE87400203B5C /* AuthorizationScreen */ = {
 			isa = PBXGroup;
 			children = (
+				B6528A9228AECA4E00AB9D88 /* Application */,
+				B6528A9428AECB4900AB9D88 /* Controllers */,
+				B6528A9528AECB6600AB9D88 /* StackView  */,
+				B6528A9628AECB9B00AB9D88 /* Labels */,
+				B6528A9728AECBC400AB9D88 /* TextFields */,
+				B6528A9828AECDA700AB9D88 /* Buttons */,
+				B6528A9328AECA7C00AB9D88 /* Resources */,
+				B619ECF028ACE87400203B5C /* Main.storyboard */,
+			);
+			path = AuthorizationScreen;
+			sourceTree = "<group>";
+		};
+		B6528A9228AECA4E00AB9D88 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				B619ECEA28ACE87400203B5C /* AppDelegate.swift */,
 				B619ECEC28ACE87400203B5C /* SceneDelegate.swift */,
-				B619ECEE28ACE87400203B5C /* ViewController.swift */,
-				B619ED0028ACF2AB00203B5C /* MainTopLabel.swift */,
-				B619ED0428ACF8F000203B5C /* LoginTextField.swift */,
-				B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */,
-				B619ED0E28AD09B900203B5C /* StackView.swift */,
-				B64C34DC28AD7DC300DA7B72 /* LoginButton.swift */,
-				B64C34DE28AD818100DA7B72 /* ForgotPasswordLabel.swift */,
-				B64C34E228AD927900DA7B72 /* ConnectionLabel.swift */,
-				B64C34E428AD95AF00DA7B72 /* FacebookButton.swift */,
-				B64C34E828AD9A0D00DA7B72 /* TwitterButton.swift */,
-				B619ECF028ACE87400203B5C /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B6528A9328AECA7C00AB9D88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B619ECF828ACE87900203B5C /* Info.plist */,
+				B619ECF528ACE87900203B5C /* LaunchScreen.storyboard */,
 				B619ECF328ACE87900203B5C /* Assets.xcassets */,
 				B64C34EA28AD9AB500DA7B72 /* twitter.png */,
 				B64C34E628AD99B000DA7B72 /* facebook.png */,
 				B619ED0928AD057100203B5C /* login.png */,
 				B619ED0828AD057100203B5C /* password.png */,
 				B619ECFE28ACEAA100203B5C /* screen back.png */,
-				B619ECF528ACE87900203B5C /* LaunchScreen.storyboard */,
-				B619ECF828ACE87900203B5C /* Info.plist */,
 			);
-			path = AuthorizationScreen;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6528A9428AECB4900AB9D88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B619ECEE28ACE87400203B5C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6528A9528AECB6600AB9D88 /* StackView  */ = {
+			isa = PBXGroup;
+			children = (
+				B619ED0E28AD09B900203B5C /* StackView and Extensions.swift */,
+			);
+			path = "StackView ";
+			sourceTree = "<group>";
+		};
+		B6528A9628AECB9B00AB9D88 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				B64C34DE28AD818100DA7B72 /* ForgotPasswordLabel.swift */,
+				B619ED0028ACF2AB00203B5C /* MainTopLabel.swift */,
+				B64C34E228AD927900DA7B72 /* ConnectionLabel.swift */,
+				B66480DF28AE27F30002E5DC /* SignUpLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		B6528A9728AECBC400AB9D88 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				B619ED0428ACF8F000203B5C /* LoginTextField.swift */,
+				B619ED0628ACFFAB00203B5C /* PasswordTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		B6528A9828AECDA700AB9D88 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B64C34DC28AD7DC300DA7B72 /* LoginButton.swift */,
+				B64C34E428AD95AF00DA7B72 /* FacebookButton.swift */,
+				B64C34E828AD9A0D00DA7B72 /* TwitterButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +246,12 @@
 			files = (
 				B64C34E328AD927900DA7B72 /* ConnectionLabel.swift in Sources */,
 				B619ECEF28ACE87400203B5C /* ViewController.swift in Sources */,
+				B66480E028AE27F30002E5DC /* SignUpLabel.swift in Sources */,
 				B64C34DD28AD7DC300DA7B72 /* LoginButton.swift in Sources */,
 				B619ED0128ACF2AB00203B5C /* MainTopLabel.swift in Sources */,
 				B64C34E528AD95AF00DA7B72 /* FacebookButton.swift in Sources */,
 				B619ED0728ACFFAB00203B5C /* PasswordTextField.swift in Sources */,
-				B619ED0F28AD09B900203B5C /* StackView.swift in Sources */,
+				B619ED0F28AD09B900203B5C /* StackView and Extensions.swift in Sources */,
 				B619ECEB28ACE87400203B5C /* AppDelegate.swift in Sources */,
 				B64C34DF28AD818100DA7B72 /* ForgotPasswordLabel.swift in Sources */,
 				B64C34E928AD9A0D00DA7B72 /* TwitterButton.swift in Sources */,
@@ -345,7 +405,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RCLUGGB3X5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AuthorizationScreen/Info.plist;
+				INFOPLIST_FILE = AuthorizationScreen/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -373,7 +433,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RCLUGGB3X5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AuthorizationScreen/Info.plist;
+				INFOPLIST_FILE = AuthorizationScreen/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
